@@ -16,6 +16,7 @@
 		3E283FEF1D8721A0005B1482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E283FED1D8721A0005B1482 /* Main.storyboard */; };
 		3E283FF11D8721A0005B1482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E283FF01D8721A0005B1482 /* Assets.xcassets */; };
 		3E283FF41D8721A0005B1482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E283FF21D8721A0005B1482 /* LaunchScreen.storyboard */; };
+		3EBB14001D8840B80045B848 /* PlayerDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB13FF1D8840B80045B848 /* PlayerDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3E283FF01D8721A0005B1482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E283FF31D8721A0005B1482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E283FF51D8721A0005B1482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBB13FF1D8840B80045B848 /* PlayerDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				3E283FE91D8721A0005B1482 /* AppDelegate.swift */,
 				3E283FEB1D8721A0005B1482 /* ViewController.swift */,
 				3E283FED1D8721A0005B1482 /* Main.storyboard */,
+				3EBB13FF1D8840B80045B848 /* PlayerDetailsTableViewController.swift */,
 				3E1679BC1D87891C00E8722B /* PlayerTableViewCell.swift */,
 				3E1679B61D8743DA00E8722B /* PlayersViewController.swift */,
 				3E1679B81D87444C00E8722B /* Player.swift */,
@@ -153,6 +156,7 @@
 				3E283FEA1D8721A0005B1482 /* AppDelegate.swift in Sources */,
 				3E1679BB1D8744D200E8722B /* SampleData.swift in Sources */,
 				3E1679B71D8743DA00E8722B /* PlayersViewController.swift in Sources */,
+				3EBB14001D8840B80045B848 /* PlayerDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

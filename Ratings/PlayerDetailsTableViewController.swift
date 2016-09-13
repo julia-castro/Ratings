@@ -1,16 +1,14 @@
 //
-//  PlayersViewController.swift
+//  PlayerDetailsTableViewController.swift
 //  Ratings
 //
-//  Created by Julia Castro on 9/12/16.
+//  Created by Julia Castro on 9/13/16.
 //  Copyright © 2016 Julia Castro. All rights reserved.
 //
 
 import UIKit
 
-class PlayersViewController: UITableViewController {
-    
-    var players: [Player] = playersData
+class PlayerDetailsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,38 +28,24 @@ class PlayersViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
-
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "PlayerCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PlayerTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        let player = players[indexPath.row] as Player
-        
-        cell.player = player
-        
+        // Configure the cell...
+
         return cell
     }
-    
-    @IBAction func cancelToPlayersViewController(segue: UIStoryboardSegue) {
-        
-    }
-    
-    @IBAction func savePlayerDetail(segue: UIStoryboardSegue) {
-        
-    }
-    
-//    func imageForRating(rating:Int) -> UIImage? {
-//        let imageName = "\(rating)Stars"
-//        return UIImage(named: imageName)
-//    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
