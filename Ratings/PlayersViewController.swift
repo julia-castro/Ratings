@@ -39,29 +39,21 @@ class PlayersViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
+        let cellIdentifier = "PlayerCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PlayerTableViewCell
 
         let player = players[indexPath.row] as Player
         
-        if let nameLabel = cell.viewWithTag(100) as? UILabel {
-            nameLabel.text = player.name
-        }
-        
-        if let gameLabel = cell.viewWithTag(101) as? UILabel {
-            gameLabel.text = player.game
-        }
-        
-        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
-            ratingImageView.image = self.imageForRating(player.rating)
-        }
+        cell.player = player
         
         return cell
     }
     
-    func imageForRating(rating:Int) -> UIImage? {
-        let imageName = "\(rating)Stars"
-        return UIImage(named: imageName)
-    }
+//    func imageForRating(rating:Int) -> UIImage? {
+//        let imageName = "\(rating)Stars"
+//        return UIImage(named: imageName)
+//    }
 
     /*
     // Override to support conditional editing of the table view.
