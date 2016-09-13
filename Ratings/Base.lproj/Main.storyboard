@@ -155,7 +155,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Mmd-jK-cnG">
                             <connections>
-                                <segue destination="qa4-aK-WFX" kind="unwind" unwindAction="savePlayerDetail:" id="o1P-kl-XMB"/>
+                                <segue destination="qa4-aK-WFX" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetail:" id="o1P-kl-XMB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
