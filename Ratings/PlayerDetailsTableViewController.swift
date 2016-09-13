@@ -9,11 +9,23 @@
 import UIKit
 
 class PlayerDetailsTableViewController: UITableViewController {
-    
-    var player: Player?
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
+    
+    var player: Player?
+    var game: String = "Chess" {
+        didSet {
+            detailLabel.text? = game
+        }
+    }
+    
+    @IBAction func unwindWithSelectedGame(segue: UIStoryboardSegue) {
+        if let gamePickerTableViewController = segue.sourceViewController as? GamePickerTableViewController,
+            selectedGame = gamePickerTableViewController.selectedGame {
+                game = selectedGame
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
